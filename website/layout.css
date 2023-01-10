@@ -1,0 +1,586 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
+
+.menu_bar {
+  margin-left: auto;
+  font-size: 1.8rem;
+  margin-right: 3rem;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  border: 0.1rem solid rgb(95, 95, 95);
+  align-items: center;
+  background-color: rgb(255, 252, 241);
+}
+
+.home_button {
+  border: 0.1rem solid rgb(95, 95, 95);
+  background-color: rgb(255, 252, 241);
+  padding: 1rem;
+}
+
+.menu_bar a {
+  color: black;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-family: Open Sans Condensed Light;
+}
+
+.menu_bar a:hover {
+  color: rgb(92, 92, 92);
+}
+
+/* SIDE: Semesteropgaver */
+
+@media (min-width: 800px) {
+  .tema_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0.5%;
+  }
+
+  .temaer {
+    margin: 1.5rem;
+    padding: 3rem;
+    border: 0.1rem solid rgb(95, 95, 95);
+    display: inline-block;
+    transition: transform 0.4s;
+  }
+
+  .blue {
+    background-color: #f4ffff;
+  }
+
+  .pink {
+    background-color: #fff4fc;
+    grid-column: 1/2;
+  }
+
+  .yellow {
+    background-color: #fffff4;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .purple {
+    background-color: #fcf4ff;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .red {
+    background-color: #fff0f0;
+  }
+  .tematal {
+    font-family: Open Sans Condensed Light;
+    font-size: 1.5rem;
+    padding-left: 0.13%;
+  }
+
+  .temanavn {
+    font-family: Montserrat;
+    font-size: 1.8rem;
+  }
+  .centered_headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .general_headline {
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 300;
+    grid-column: 2/3;
+    justify-self: center;
+    background-color: rgb(252, 241, 231);
+    padding: 1rem 2rem 1rem 2rem;
+    border: 0.1rem solid black;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .tema_boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 0.5%;
+  }
+
+  .temaer {
+    margin: 1rem;
+    padding: 2rem 1.3rem 2rem 1.3rem;
+    border: 0.1rem solid rgb(95, 95, 95);
+    display: inline-block;
+    transition: transform 0.4s;
+  }
+  .blue {
+    background-color: #f4ffff;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .pink {
+    background-color: #fff4fc;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .yellow {
+    background-color: #fffff4;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .purple {
+    background-color: #fcf4ff;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .red {
+    background-color: #fff0f0;
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .tematal {
+    font-family: Open Sans Condensed Light;
+    font-size: 1.3rem;
+    padding-left: 0.13%;
+  }
+
+  .temanavn {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+  }
+  .centered_headline {
+    justify-content: center;
+  }
+
+  .general_headline {
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-weight: 300;
+    justify-self: center;
+    background-color: rgb(252, 241, 231);
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border: 0.1rem solid black;
+    text-align: center;
+  }
+}
+
+.temaer:hover {
+  transform: scale(1.08);
+}
+
+/* Underside til hvert tema */
+
+@media (min-width: 800px) {
+  .bluebox {
+    background-color: #f4ffff;
+    border: 0.1rem solid rgb(95, 95, 95);
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid_3_2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 2rem;
+  }
+
+  .opgavelink {
+    grid-column: 1/2;
+    font-family: Open Sans Regular;
+    color: rgb(53, 69, 102);
+  }
+
+  .beskrivelse {
+    grid-column: 1/2;
+    font-family: Open Sans Regular;
+    line-height: 175%;
+  }
+
+  .opgave_photos_2 {
+    grid-column: 2/3;
+    align-self: center;
+    gap: 2rem;
+  }
+  .opgave_photos_2 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  .opgave_photos_3 {
+    grid-column: 2/3;
+    align-self: center;
+    gap: 2rem;
+  }
+
+  .long_photo {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .long_photo2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .opgave_photos_3 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+  .opgave_photos_4 {
+    grid-column: 2/3;
+    align-self: center;
+  }
+  .opgave_photos_4 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  .grid_1_1_1_1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .grid_1_1_1_1 img {
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+  .opgave_photos_4_2 {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .opgave_photos_2 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+  .opgave_photos_3 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+  .opgave_photos_4,
+  .opgave_photos_4_2 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+
+  .grid_1_1_1_1 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1250px) {
+  .opgave_photos_2_2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+  .portfolio_text {
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: 1250px) {
+  .opgave_photos_2_2 {
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .opgave_photos_2_2 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .bluebox {
+    background-color: #f4ffff;
+    border: 0.1rem solid rgb(95, 95, 95);
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .opgavelink {
+    font-family: Open Sans Regular;
+    color: rgb(53, 69, 102);
+  }
+
+  .beskrivelse {
+    font-family: Open Sans Regular;
+    line-height: 175%;
+  }
+
+  .opgave_photos_2 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  .long_photo {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .long_photo2 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .opgave_photos_3 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  .opgave_photos_4 img {
+    transition: transform 0.2s;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  .grid_1_1_1_1 img {
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+}
+.webblue {
+  background-color: #f4ffff;
+}
+
+.uxpink {
+  background-color: #fff4fc;
+}
+
+.animationyellow {
+  background-color: #fffff4;
+}
+
+.indholdpurple {
+  background-color: #fcf4ff;
+}
+
+.portfoliored {
+  background-color: #fff0f0;
+}
+
+.standardcolor {
+  background-color: rgb(255, 252, 241);
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+}
+/* Om Mig */
+
+@media (min-width: 800px) {
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 4rem;
+    border: 0.1rem solid rgb(95, 95, 95);
+    background-color: rgb(255, 252, 241);
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    grid-column: 2/3;
+    background-color: #fff4fc;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  h3 {
+    font-family: montserrat;
+  }
+  .cv p,
+  ul {
+    font-family: Open Sans Regular;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid_1_1 {
+    margin: 1rem;
+    border: 0.1rem solid rgb(95, 95, 95);
+    background-color: rgb(255, 252, 241);
+    padding: 1rem;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    grid-column: 1/4;
+    background-color: #fff4fc;
+    border: 0.1rem solid rgb(95, 95, 95);
+  }
+
+  h3 {
+    font-family: montserrat;
+  }
+  .cv p,
+  ul {
+    font-family: Open Sans Regular;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+.cv p {
+  text-align: center;
+}
+
+/* Mobil Menu */
+
+.mobile_menu {
+  margin-left: auto;
+}
+
+.dropbtn {
+  background-color: #fffcf1;
+  padding: 1.03rem;
+  border: 0.1rem solid rgb(95, 95, 95);
+  cursor: pointer;
+}
+
+.clickthrough {
+  pointer-events: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1efe4;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: Open Sans Condensed Light;
+  font-size: 1.3rem;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* @Media for Menu */
+
+@media (max-width: 800px) {
+  .menu_bar {
+    display: none;
+  }
+  .home_button {
+    padding: 0.5rem;
+    aspect-ratio: 1/1;
+  }
+  .home_button a {
+    width: 40%;
+  }
+  nav {
+    margin: 0.5rem 0 0.5rem 0;
+    padding-top: 0;
+  }
+  .mobile_menu {
+    aspect-ratio: 1/1;
+    justify-self: right;
+  }
+  .mobile_menu button {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .mobile_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .dropdown-content {
+    width: 4.1rem;
+  }
+  .dropdown-content a {
+    padding: 12px 8px;
+  }
+}
